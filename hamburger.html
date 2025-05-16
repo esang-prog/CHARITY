@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charity's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="basta.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-section">
+            <video autoplay loop muted class="profile-video">
+                <source src="image/video.mp4" type="video/mp4">
+            </video>
+            <img src="image/pro.jpeg" class="profile-pic">
+            <h2>Hi, I'm Charity May Mojado</h2>
+            <h2>  Welcome to my website</h2>
+            <p>I'm a programmer passionate about creating innovative solutions, solving problems, and bringing ideas to life through code. </p>
+            
+            <p>In this portfolio you can learn about my journey in becoming a programmer, also my achievements during my time in school. With the help of my teacher, family, and friends nothing is impossible.</p>
+        </div>
+        <div class="bottom-section">
+            <div class="button-section">
+                <button class="nav-button" onclick="showContent('about')">About Me</button>
+                <button class="nav-button" onclick="showContent('education')">Education</button>
+                <button class="nav-button" onclick="showContent('skills')">Skills</button>
+                <button class="nav-button" onclick="showContent('contact')">Contact</button>
+            </div>
+            <div class="content-area">
+                <div id="content"></div>
+            </div>
+        </div>
+        <div class="achievements-section">
+         <h2>Achievements</h2>
+            <div class="achievements-gallery">
+                <img src="image/first.jpg" alt="Achievement 1">
+                <img src="image/second.jpeg" alt="Achievement 2">
+                <img src="image/third.jpg" alt="Achievement 3">
+                
+                  <div class="Credits-section">
+                <h5> Credits </h5>
+                <h6>
+               Live background video from ( @livewallpaper77 ) you can look the video in tiktok.</h6>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(section) {
+            const contentElement = document.getElementById('content');
+            if (section === 'about') {
+                contentElement.innerHTML = `
+                    <h2>About Me</h2>
+                    <p>Born in May 13, 2005</p>
+               
+                    <p>A first year student studying in the field of Association Computer Technology (ACT) at Western Mindanao State University (WMSU) - ESU, Siay Campus. </p>
+                    <p>I'm a dedicated individual who wants to expand my learning, especially with computers and technology, and hone my skills for me to become a more competitive person. </p>
+                    <p>I'm a programmer, passionate in creating innovative solution, committed to sustainable development, and ready to bring life in to colors through code.</p>      
+                    
+                    <h4>Family</h4>
+                    <p>Mother : Lolita Capuno Mojado</p>
+                    <p>Sister : Anna Capuno Mojado</p>
+                    <p>Brother : James Capuno Mojado</p>
+                    <p>Grandpa : Ramon Figura Mojado </p>
+                    <p>Grandma : Anabella Capuno Mojado</p>
+                                  `;
+            } else if (section === 'education') {
+                contentElement.innerHTML = '<h2>Education</h2><ul><li>Senior High School: Siay Senior High School (2022-2024)</li><li>High School: Siay National High School (2018-2022)</li><li>Elementary: Siay Central Elementary School (Graduated 2018)</li></ul>';
+            } else if (section === 'skills') {
+                contentElement.innerHTML = `
+                    <h2>Skills</h2>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Computer literate</li>
+                        <li>Creative</li>
+                        <li>Adaptive</li>
+                    </ul>
+                    <h3>Hobbies</h3>
+                    <div class="hobbies-gallery">
+                        <h4>Drawing</h4>
+                        <img src="image/drawing3.jpg" alt="Drawing 1">
+                        <img src="image/drawing2.png" alt="Drawing 2">
+                        <img src="image/drawing3.jpg" alt="Drawing 3">
+                        <h4>Dancing</h4>
+                        <img src="image/dancing.jpg" alt="Dancing 1">
+                        <img src="image/dancing2.jpg" alt="Dancing 2">
+                                              `;
+            } else if (section === 'contact') {
+                contentElement.innerHTML = '<h2>Contact</h2><p>Gmail: charitymojado1@gmail.com</p><p>Instagram: charity May Mojado</p><p>Contact Number: 09074598371</p>';
+                
+                
+            }
+        }
+    </script>
+</body>
+</html>
