@@ -49,7 +49,7 @@
         function showContent(section) {
             const contentElement = document.getElementById('content');
             if (section === 'about') {
-                contentElement.hamburger.html= `
+                contentElement.innerHTML= `
                     <h2>About Me</h2>
                     <p>Born in May 13, 2005</p>
                
@@ -65,9 +65,9 @@
                     <p>Grandma : Anabella Capuno Mojado</p>
                                   `;
             } else if (section === 'education') {
-                contentElement.hamburger.html= '<h2>Education</h2><ul><li>Senior High School: Siay Senior High School (2022-2024)</li><li>High School: Siay National High School (2018-2022)</li><li>Elementary: Siay Central Elementary School (Graduated 2018)</li></ul>';
+                contentElement.innerHTML= '<h2>Education</h2><ul><li>Senior High School: Siay Senior High School (2022-2024)</li><li>High School: Siay National High School (2018-2022)</li><li>Elementary: Siay Central Elementary School (Graduated 2018)</li></ul>';
             } else if (section === 'skills') {
-                contentElement.hamburger.html= `
+                contentElement.innerHTML= `
                     <h2>Skills</h2>
                     <h3>Skills</h3>
                     <ul>
@@ -86,7 +86,7 @@
                         <img src="image/dancing2.jpg" alt="Dancing 2">
                                               `;
             } else if (section === 'contact') {
-                contentElement.hamburger.html = '<h2>Contact</h2><p>Gmail: charitymojado1@gmail.com</p><p>Instagram: charity May Mojado</p><p>Contact Number: 09074598371</p>';
+                contentElement.innerHTML = '<h2>Contact</h2><p>Gmail: charitymojado1@gmail.com</p><p>Instagram: charity May Mojado</p><p>Contact Number: 09074598371</p>';
                 
                 
             }
